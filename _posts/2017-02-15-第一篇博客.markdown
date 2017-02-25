@@ -1,0 +1,63 @@
+---
+layout: post
+title:  "使用jekyll搭建博客是在本地调试时出现中文标题乱码问题？"
+categories: 个人博客
+tags:   个人博客
+author: 王东
+---
+
+
+* content
+{:toc}
+
+第一篇博客
+
+
+
+
+# 第一篇博客
+## 使用jekyll搭建博客是在本地调试时出现中文标题乱码问题？
+---
+>解决方案：修改安装路径中的filehandler.rb文件。
+>>例如：我的安装路径为
+>D:\Program Files (x86)\Ruby23-x64\lib\ruby\2.3.0\webrick\httpservlet<br>
+>修改之前请先备份。需要修改以下两处（+的一行为添加部分）。
+
+>1.
+`path = req.path_info.dup.force_encoding(Encoding.find("filesystem"))`
+<br>` path.force_encoding("UTF-8") # 加入编码`
+<br>`if trailing_pathsep?(req.path_info)`<br>
+>2.
+`break if base == "/"`<br>
+`+ base.force_encoding("UTF-8") #加入编码`<br>
+`break unless File.directory?(File.expand_path(res.filename + base))`
+  <br>[摘自尹傲雄的博客](http://blog.csdn.net/yinaoxiong/article/details/54025482)
+
+---
+## Git的.gitignore
+---
+.gitignore 配置文件用于配置不需要加入版本管理的文件，
+配置好该文件可以为我们的版本管理带来很大的便利。
+
+---
+>1.配置语法：
+>>以斜杠“/”开头表示目录；<br>
+>>以星号“*”通配多个字符；<br>
+>>以问号“?”通配单个字符; <br>
+>>以方括号“[]”包含单个字符的匹配列表；<br>
+>>以叹号“!”表示不忽略(跟踪)匹配到的文件或目录；<br>
+>>git对于.gitignore 配置文件是按行从上到下进行规则匹配的。<br>
+>>意味着如果前面的规则匹配的范围更大，则后面的规则将不会生效；<br>
+>>开放模式和保守模式。
+
+---
+>2.举例说明：
+>>（1）/folder <br>
+说明：忽略目录folder下的全部内容.  
+>>（2）/* <br>
+  !.gitignore <br>
+ !/file/bin/<br>
+说明：忽略全部内容，但是不忽略 .gitignore 文件、根目录下的/file/bin/目录；
+
+---
+[我的博客](http://www.kingseast.me)
