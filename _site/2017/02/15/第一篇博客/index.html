@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>使用jekyll搭建博客是在本地调试时出现中文标题乱码问题？</title>
+    <meta name="description" content="第一篇博客">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/2017/02/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
+    <link rel="alternate" type="application/rss+xml" title="王东的博客" href="http://localhost:4000/feed.xml ">
+
+
+    <script>
+    // 百度统计代码
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?cf8506e0ef223e57ff6239944e5d46a4";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
+
+    <script>
+    // google analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-72449510-4', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">王东的博客</a>
+        <small>Front-end Dev Engineer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/collection/">
+                        
+                            <i class="fa fa-bookmark"></i>Collections
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/demo/">
+                        
+                            <i class="fa fa-play"></i>Demo
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1>使用jekyll搭建博客是在本地调试时出现中文标题乱码问题？</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2017-02-15
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>王东
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#个人博客" title="Category: 个人博客" rel="category">个人博客</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2" title="Tag: 个人博客" rel="tag">个人博客</a-->
+        <a href="/tag/#个人博客" title="Tag: 个人博客" rel="tag">个人博客</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#第一篇博客" id="markdown-toc-第一篇博客">第一篇博客</a>    <ul>
+      <li><a href="#使用jekyll搭建博客是在本地调试时出现中文标题乱码问题" id="markdown-toc-使用jekyll搭建博客是在本地调试时出现中文标题乱码问题">使用jekyll搭建博客是在本地调试时出现中文标题乱码问题？</a></li>
+      <li><a href="#git的gitignore" id="markdown-toc-git的gitignore">Git的.gitignore</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>第一篇博客</p>
+
+<h1 id="第一篇博客">第一篇博客</h1>
+<h2 id="使用jekyll搭建博客是在本地调试时出现中文标题乱码问题">使用jekyll搭建博客是在本地调试时出现中文标题乱码问题？</h2>
+<hr />
+<blockquote>
+  <p>解决方案：修改安装路径中的filehandler.rb文件。</p>
+  <blockquote>
+    <p>例如：我的安装路径为
+D:\Program Files (x86)\Ruby23-x64\lib\ruby\2.3.0\webrick\httpservlet<br />
+修改之前请先备份。需要修改以下两处（+的一行为添加部分）。</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <p>1.
+<code class="highlighter-rouge">path = req.path_info.dup.force_encoding(Encoding.find("filesystem"))</code>
+<br /><code class="highlighter-rouge"> path.force_encoding("UTF-8") # 加入编码</code>
+<br /><code class="highlighter-rouge">if trailing_pathsep?(req.path_info)</code><br />
+2.
+<code class="highlighter-rouge">break if base == "/"</code><br />
+<code class="highlighter-rouge">+ base.force_encoding("UTF-8") #加入编码</code><br />
+<code class="highlighter-rouge">break unless File.directory?(File.expand_path(res.filename + base))</code>
+  <br /><a href="http://blog.csdn.net/yinaoxiong/article/details/54025482">摘自尹傲雄的博客</a></p>
+</blockquote>
+
+<hr />
+<h2 id="git的gitignore">Git的.gitignore</h2>
+<hr />
+<p>.gitignore 配置文件用于配置不需要加入版本管理的文件，
+配置好该文件可以为我们的版本管理带来很大的便利。</p>
+
+<hr />
+<blockquote>
+  <p>1.配置语法：</p>
+  <blockquote>
+    <p>以斜杠“/”开头表示目录；<br />
+以星号“*”通配多个字符；<br />
+以问号“?”通配单个字符; <br />
+以方括号“[]”包含单个字符的匹配列表；<br />
+以叹号“!”表示不忽略(跟踪)匹配到的文件或目录；<br />
+git对于.gitignore 配置文件是按行从上到下进行规则匹配的。<br />
+意味着如果前面的规则匹配的范围更大，则后面的规则将不会生效；<br />
+开放模式和保守模式。</p>
+  </blockquote>
+</blockquote>
+
+<hr />
+<blockquote>
+  <p>2.举例说明：</p>
+  <blockquote>
+    <p>（1）/folder <br />
+说明：忽略目录folder下的全部内容.<br />
+（2）/* <br />
+  !.gitignore <br />
+ !/file/bin/<br />
+说明：忽略全部内容，但是不忽略 .gitignore 文件、根目录下的/file/bin/目录；</p>
+  </blockquote>
+</blockquote>
+
+<hr />
+<p><a href="http://www.kingseast.me">我的博客</a></p>
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                        
+                        <h2 id="similar_posts">Similar Posts</h2>
+                        <ul>
+                        
+                        <li class="relatedPost">
+                            <a href="http://localhost:4000/2017/06/06/Markdown%E8%AF%AD%E6%B3%95/">Markdown常用语法
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+            
+        
+            
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+        
+            </ul>
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>下一篇</strong> <a href="/2017/02/19/%E9%9A%8F%E7%AC%94/">触人心弦的一首诗</a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="http://localhost:4000/2017/02/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-title="使用jekyll搭建博客是在本地调试时出现中文标题乱码问题？" data-url="http://localhost:4000/2017/02/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {
+        short_name: "kingseast"
+    };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';
+        ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+<!--畅言一下-->
+<!--有言-->
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2136814"></script>
+<!-- UY END -->
+
+<!--网易云跟帖-->
+<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: document.location.href, 
+    sourceId: "",
+    productKey: "a835321eb7d347238c30151207baeb74",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    <li><a href="#similar_posts">Similar Posts</a></li>
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+             我的学习记录!!! 
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/Kingseast" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>  
+            <a href="mailto:wangdongcs@aliyun.com" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>  
+            <a href="http://weibo.com/醉丿明月" title="Weibo"><i class="fa fa-weibo" aria-hidden="true"></i></a>       
+        </p>
+        <p>
+            本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        </p>
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+            <span>
+                Theme designed by <a href="https://github.com/Gaohaoyang">HyG</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" class="scroll">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/scroll.min.js " charset="utf-8"></script>
+  </body>
+
+</html>

@@ -10,6 +10,8 @@ author: 王东
 * content
 {:toc}
 
+
+
 Markdown常用语法
 =====
 
@@ -106,11 +108,12 @@ Markdown 支持有序列表和无序列表。
     1.  Parish
     
 ---
-[我的博客][3]
-[我的邮箱]<wangdongcs@aliyun.com>
+[我的博客][3]  <br>
+[我的邮箱]<wangdongcs@aliyun.com>	<br>
 ### 6. 参考
-[Markdown 语法说明 (简体中文版)][1]
-[Markdown进阶语法整理-简书][2]
+[Markdown 语法说明 (简体中文版)][1]	<br>
+[Markdown进阶语法整理-简书][2] 
+
 [1]:http://www.appinn.com/markdown/
 [2]:http://www.jianshu.com/p/0b257de21eb5
 [3]:http://www.kingseast.me
