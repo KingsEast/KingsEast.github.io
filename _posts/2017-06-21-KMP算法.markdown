@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Markdown常用语法"
+title:  "KMP算法"
 categories: 个人博客
 tags:   个人博客
 author: 王东
@@ -13,15 +13,16 @@ author: 王东
 
 
 
-Markdown常用语法
+KMP算法
 =====
 [TOC]
+***
 ### 1. 代码块
 ---
 使用"```"+"语法名称" 进行标记。例如：
 
 ``` java
-    public void main(String[] args){
+    public void main(String args){
         System.out.printf("HELLO");
     } 
 ```
@@ -45,8 +46,8 @@ Markdown常用语法
 ### 3. 待办事宜Todo列表
 ---
 写法介绍/-[]早起跑步举例。
- 
- 
+
+
 - [x] 早起跑步
 - [ ] 看电影
 - [ ] 发邮件
@@ -58,8 +59,8 @@ Markdown常用语法
 ### 4. 粗体与斜体
 ---
 Markdown的粗体与斜体，用\*\*包含一段文本就是粗体的语法，用一个\*包含一段文字就是斜体的语法。
-**我见青山多妩媚，**
-*料青山，见我应如是。*
+**我见青山多妩媚**
+*料青山，见我应如是*
 
 ---
 ### 5.列表
@@ -106,11 +107,11 @@ Markdown 支持有序列表和无序列表。
     1.  Parish
     
 ---
-[我的博客][3]
-[我的邮箱]<wangdongcs@aliyun.com>
+[我的博客][3]   <br>
+[我的邮箱]<wangdongcs@aliyun.com>   <br>
 ### 6. 参考
-[Markdown 语法说明 (简体中文版)][1] <br>
-[Markdown进阶语法整理-简书][2] <br>
+[Markdown 语法说明 (简体中文版)][1]  <br>
+[Markdown进阶语法整理-简书][2]      <br>
 
 [1]:http://www.appinn.com/markdown/
 [2]:http://www.jianshu.com/p/0b257de21eb5

@@ -2,7 +2,7 @@
 <!-- 多说评论框 start -->
 <div class="ds-thread" data-thread-key="{{ site.url }}{{ page.url }}" data-title="{{page.title}}" data-url="{{ site.url }}{{ page.url }}"></div>
 <!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) 
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
     var duoshuoQuery = {
         short_name: "{{site.duoshuo_shortname}}"
@@ -15,7 +15,7 @@
         ds.charset = 'UTF-8';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
-</script>   -->
+</script>
 <!-- 多说公共JS代码 end -->
 {% endif %}
 
@@ -44,19 +44,25 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 {% endif %}
-<<<<<<< HEAD
 <!--畅言一下-->
+<!--PC版
+<div id="SOHUCS" ></div>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+window.changyan.api.config({
+appid: 'cyt4lHjWk',
+conf: 'prod_0fd334e2eb019a3adf8cb231696f9981'
+});
+</script>
+-->
 <!--有言-->
-<<<<<<< HEAD
-<!-- UY BEGIN-->
-=======
-<!-- UY BEGIN 
->>>>>>> origin/master
+<!-- UY BEGIN -->
 <div id="uyan_frame"></div>
 <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2136814"></script>
 <!-- UY END -->
 
-<!--网易云跟帖
+<!--网易云跟帖-->
+<!--
 <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
@@ -68,5 +74,4 @@
 </script>
 <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
 -->
-=======
->>>>>>> parent of d71542b... 2017-06-18@wd
+
