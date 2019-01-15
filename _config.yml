@@ -88,8 +88,6 @@ pagination_dir: page
 ## 当前主题的Docs：https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md
 theme: matery
 
-# 加入百度统计
-baidu_tongji: true
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:

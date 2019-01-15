@@ -229,6 +229,8 @@ googleAnalytics:
 baidu_tongji: 
   enable: true
 ##加入CNZZ站长统计
+cnzz_tongji: 
+  enable: true
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
 featureImages: 
