@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Java为什么不允许范型数组</title>
+      <link href="/2019/01/13/Java%E6%B3%9B%E5%9E%8B%E6%95%B0%E7%BB%84.html"/>
+      <url>/2019/01/13/Java%E6%B3%9B%E5%9E%8B%E6%95%B0%E7%BB%84.html</url>
+      
+        <content type="html"><![CDATA[<ul><li>content<br>{:toc}</li></ul><p>共享数组(convariant array)。<br><br>类型擦除(type erasure)。<br><br>Java内存模型。<br></p><h1 id="Java内存模型"><a href="#Java内存模型" class="headerlink" title="Java内存模型"></a>Java内存模型</h1><hr><blockquote><p>解决方案：修改安装路径中的filehandler.rb文件。</p><blockquote><p>例如：我的安装路径为<br>D:\Program Files (x86)\Ruby23-x64\lib\ruby\2.3.0\webrick\httpservlet<br><br>修改之前请先备份。需要修改以下两处（+的一行为添加部分）。</p></blockquote></blockquote><blockquote><p>1.<br><code>path = req.path_info.dup.force_encoding(Encoding.find(&quot;filesystem&quot;))</code><br><br><code>path.force_encoding(&quot;UTF-8&quot;) # 加入编码</code><br><br><code>if trailing_pathsep?(req.path_info)</code><br><br>2.<br><code>break if base == &quot;/&quot;</code><br><br><code>+ base.force_encoding(&quot;UTF-8&quot;) #加入编码</code><br><br><code>break unless File.directory?(File.expand_path(res.filename + base))</code><br>  <br><a href="http://blog.csdn.net/yinaoxiong/article/details/54025482" target="_blank" rel="noopener">摘自尹傲雄的博客</a></p></blockquote><hr><h2 id="Git的-gitignore"><a href="#Git的-gitignore" class="headerlink" title="Git的.gitignore"></a>Git的.gitignore</h2><hr><p>.gitignore 配置文件用于配置不需要加入版本管理的文件，<br>配置好该文件可以为我们的版本管理带来很大的便利。</p><hr><blockquote><p>1.配置语法：</p><blockquote><p>以斜杠“/”开头表示目录；<br><br>以星号“*”通配多个字符；<br><br>以问号“?”通配单个字符; <br><br>以方括号“[]”包含单个字符的匹配列表；<br><br>以叹号“!”表示不忽略(跟踪)匹配到的文件或目录；<br><br>git对于.gitignore 配置文件是按行从上到下进行规则匹配的。<br><br>意味着如果前面的规则匹配的范围更大，则后面的规则将不会生效；<br><br>开放模式和保守模式。</p></blockquote></blockquote><hr><blockquote><p>2.举例说明：</p><blockquote><p>（1）/folder <br><br>说明：忽略目录folder下的全部内容.<br>（2）/* <br><br>  !.gitignore <br><br> !/file/bin/<br><br>说明：忽略全部内容，但是不忽略 .gitignore 文件、根目录下的/file/bin/目录；</p></blockquote></blockquote><hr><p><a href="http://www.kingseast.me" target="_blank" rel="noopener">我的博客</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2019/01/09/hello-world.html"/>
+      <url>/2019/01/09/hello-world.html</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
